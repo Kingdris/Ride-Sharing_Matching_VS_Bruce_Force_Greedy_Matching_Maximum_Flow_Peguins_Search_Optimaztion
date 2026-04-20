@@ -12,3 +12,6 @@ baseline to compare our other algorithms against, it was interesting to see how 
 note the purpose of the maximum flow algorithm is to find optimal matches while avoiding missing opportunities, like seen with greedy matching. On the other hand, the greedy matching 
 algorithm, while being the quickest algorithm, took drastically more operations compared to the others, at a staggering 160k operations at 400 riders, making it also the most expensive 
 algorithm. Overall, aside from code complexities and operation expenses, the observed time efficiency compared very closely to its expected.
+The time complexity graphs varried slightly from the typical n^2, or n^3 graphs. There were intermitant spikes in runtime for successive increases in input size which became much more frequent
+as input sizes approached infinity. We believe that these spikes in runtime can be explained by the change in the global optimum for the addition one input/rider and the possibility of more 
+unmatched riders which delays the algorithm further while it searches for matches which might not exist.
